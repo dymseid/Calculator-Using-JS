@@ -1,0 +1,62 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #3a4452;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 40px;
+    border: 0;
+    border-radius: 8px;
+    outline: 0;
+    background: transparent;
+    color: aliceblue;
+    text-align: right;
+}
+
+.button-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 8px;
+    outline: 0;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#equal {
+    width: calc(60px * 2 + 10px); /* Double width with space between buttons */
+    background-color: orange;
+}
+
+#ac, #del, #dot, #divide, #multiply, #minus, #plus {
+    color: orange;
+    font-weight: bold;
+}
